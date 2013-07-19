@@ -8,7 +8,7 @@ gem 'will_paginate'
 gem 'bootstrap-sass' 
 gem 'bootstrap-will_paginate' 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+gem 'sqlite3' , "1.3.5"
 gem 'rspec-rails', '2.14.0'
 gem 'protected_attributes'
 # Use SCSS for stylesheets
