@@ -8,8 +8,13 @@ gem 'will_paginate'
 gem 'bootstrap-sass' 
 gem 'bootstrap-will_paginate' 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3' , "1.3.7"
-gem 'rspec-rails', '2.14.0'
+group :production do
+  gem 'pg'
+end
+group :development, :test do
+	gem 'rspec-rails' 
+        gem 'sqlite3'
+end
 gem 'protected_attributes'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -45,9 +50,6 @@ end
 
   gem 'capybara' 
   gem 'factory_girl_rails'
-
-
-  gem 'pg' 
 
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
