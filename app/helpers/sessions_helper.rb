@@ -1,5 +1,5 @@
 module SessionsHelper
-   public
+ public
 	def sign_in(user , set_cookie)
 		# 1 for permanent cookie, 0 for temporary cookie, 2 for no change to the cookie(used when update)
 		if set_cookie.to_s == "1".to_s
